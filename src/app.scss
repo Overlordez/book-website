@@ -7,6 +7,10 @@ html{
     font-size: 18px;
 }
 
+body{
+    margin: 0;
+}
+
 section{
     font-family: 'Open Sans', sans-serif;
     padding: 100px 0px 100px 0px;
@@ -541,8 +545,28 @@ footer{
     img{
         max-width: 600px;
     }
-    
 }
+
+.to-the-main{
+    text-align: center;
+    .main-page{
+        background-color: #FC7900;
+        color: white;
+        display: inline-block;
+        transition: .2s;
+        border: 3px solid #FC7900;
+        border-radius: 3px;
+        padding: 10px 50px;
+        &:hover{
+            transition: .2s;
+            background-color: #1b904e;
+            box-shadow: 0 0 10px#1b904e;
+            border: 3px solid #1b904e;
+        }
+    }
+}
+
+
 
 @-webkit-keyframes menu-bar07-01 {
     0% {
@@ -736,6 +760,7 @@ footer{
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+        padding: 0px 20px;
     }
 
     .img-about{
@@ -783,4 +808,21 @@ footer{
     .social{
         display: none;
      }
+}
+
+@media(max-width: 450px){
+    .card{
+        .card-header{
+            img{
+                display: none;
+            }
+            h5{
+                margin: 0;
+            }
+        }
+    }
+
+    .logo{
+        margin-left: 0;
+    }
 }
