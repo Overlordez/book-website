@@ -12,7 +12,7 @@
 
     <div class="header">
         <div class="logo">
-            <a href="#"><img src="/src/img/logo копия 2.png" height="60" alt=""></a>
+            <a href="index.html"><img src="/src/img/logo копия 2.png" height="60" alt=""></a>
         </div>
         <div class="nav">
             <a id="trigger" class="menu-trigger type7">
@@ -53,14 +53,18 @@
 
     <div class="order">
             <div class="row">
-                <div class="col-md-6">
+                    
+                <div class="col-md-6 txt">
                     <h1>Order your unique website</h1>
                     <div class="d-flex justify-content-center">
                         <a href="#form">
-                            <div class="btn-buy"><p>Buy</p></div>
+                            <div class="btn-buy"><p>BUY</p></div>
                         </a>
                     </div>
-                </div>
+                </div>   
+                <div class="col-md-6">
+                        <img class="order-img" src="/src/img/Без имени-11 1.png"  alt="">
+                    </div>            
             </div>
     </div>
 
@@ -72,8 +76,8 @@
     </section>
 
     <section class="our-works" id="our-works">
-        <div class="container">
-            <h1>  Our works</h1>
+        <div class="container text-center" style="margin-bottom: 20px; ">
+            <h1 style="border-bottom:1px solid #FC7900; display: initial;">  Our works</h1>
             
         </div>
         <div class="img-block d-flex justify-content-center">
@@ -95,12 +99,11 @@
     </section> 
 
      <section class="booktrailers">
-        <div class="container">
-            <h1>Booktrailers</h1>
+        <div class="container text-center" style="margin-bottom: 20px;">
+            <h1  style="border-bottom:1px solid #FC7900; display: initial;">Booktrailers</h1>
         </div>
 
         <div class="img-block d-flex justify-content-center">
-           
             <div class="col-md-5">
                 <div class="video-play" data-youtube="https://www.youtube.com/embed/b4SOWW278Gs">
                     <img class="img-video"  src="/src/img/Без имени-5 1.png" alt="image">
@@ -112,13 +115,21 @@
                 </div>
             </div>
         </div>
+
+        <div class="img-block d-flex justify-content-center">
+                <div class="col-md-5">
+                        <div class="video-play" data-youtube="https://www.youtube.com/embed/tTHZlBCi5N4">
+                            <img class="img-video"  src="/src/img/Без имени-10 1.png" alt="image">
+                        </div>
+                    </div>
+            </div>
         
 
     </section> 
 
      <section class="info" id="info">
-        <div class="container">
-            <h1> Info </h1>
+        <div class="container" style="margin-bottom: 20px;">
+            <h1 style="border-bottom:1px solid #FC7900; display: initial;"> Info </h1>
         </div>
 
         <div class="d-flex justify-content-center info-block" >
@@ -131,7 +142,7 @@
                 <div class="text-center order-btn">
                     <p style="font-size: 25px;" >Order your website from $250  </p>
                     <a href="#form">
-                        <div class="btn-order"><p>Buy</p></div>
+                        <div class="btn-order"><p>BUY</p></div>
                     </a>
                     <p style="margin-top: 20px; font-size: 25px;">Cost: $20/hour </p>
                 </div>
@@ -141,8 +152,8 @@
     </section> 
 
      <section class="about-us" id="about-us">
-        <div class="container">
-            <h1>About us</h1>
+        <div class="container" style="margin-bottom: 20px;">
+            <h1 style="border-bottom:1px solid #FC7900; display: initial;">About us</h1>
         </div>
 
         <div class="d-flex about">
@@ -155,8 +166,8 @@
     </section> 
 
     <section class="reviews" id="reviews">
-        <div class="container">
-            <h1>Reviews</h1>
+        <div class="container" style="margin-bottom: 20px;">
+            <h1 style="border-bottom:1px solid #FC7900; display: initial;">Reviews</h1>
         </div>
  
        
@@ -232,32 +243,30 @@
           </div>
     </section>
 
-    <section class="form" id="form"> 
+    <section class="form-section" id="form"> 
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">                        
-                  <h2>Contact us</h2>
-                </div>
-            </div>
             <div class="row justify-content-center">
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
-                    <form id="contact-form" class="form" action="mail-send.php" method="post" role="form">
-                        <div class="form-group">
-                            <label class="form-label" for="name">Your Name</label>
-                            <input type="text" class="form-control" id="name"  placeholder="Your name" required name="name">
-                        </div>                            
-                        <div class="form-group">
-                            <label class="form-label" for="email">Your Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"  required name="email">
-                        </div>                                                       
-                        <div class="form-group">
-                            <label class="form-label" for="message">Message</label>
-                            <textarea required name="message" rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4"></textarea>                                 
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" style="font-weight: bold;" class="btn btn-start-order">Order your site</button>
-                        </div>
-                    </form>
+                            <form id="contact-form" class="form" action="mail-send.php" method="post" role="form">
+                                    <div class="container text-center" style="background-color: #1b904e; border-radius: 9px 9px 0px 0px;  padding: 20px; margin-bottom: 20px; color: white; font-size: 30px;"> CONTACT US </div>
+                                <div style="padding:20px;">
+                                        <div class="form-group">
+                                                <label class="form-label" for="name">Your Name*</label>
+                                                <input type="text" class="form-control" id="name"  placeholder="Your name" required name="name">
+                                            </div>                            
+                                            <div class="form-group">
+                                                <label class="form-label" for="email">Your Email*</label>
+                                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"  required name="email">
+                                            </div>                                                       
+                                            <div class="form-group">
+                                                <label class="form-label" for="message">Message</label>
+                                                <textarea name="message" rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4"></textarea>                                 
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="submit" style="font-weight: bold;" class="btn btn-start-order">Order your site</button>
+                                            </div></div>
+                                   
+                                </form>
                 </div>
             </div>
           </div>
