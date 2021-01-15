@@ -107,7 +107,7 @@ var multiItemSlider = (function () {
           _index = index;
       });
       _states[_index].active = true;
-    }
+    };
 
     var _getActive = function () {
       var _index;
@@ -117,7 +117,7 @@ var multiItemSlider = (function () {
         }
       });
       return _index;
-    }
+    };
 
     var position = {
       getItemMin: function () {
@@ -144,7 +144,7 @@ var multiItemSlider = (function () {
       getMax: function () {
         return _items[position.getItemMax()].position;
       }
-    }
+    };
 
     var _transformItem = function (direction) {
       var nextItem;
@@ -202,7 +202,7 @@ var multiItemSlider = (function () {
         clearInterval(_interval);
         _cycle(_config.direction);
       }
-    }
+    };
 
     var _refresh = function () {
       clearInterval(_interval);
@@ -221,7 +221,7 @@ var multiItemSlider = (function () {
       _sliderItems.forEach(function (item, index) {
         _items.push({ item: item, position: index, transform: 0 });
       });
-    }
+    };
 
     var _setUpListeners = function () {
       _mainElement.addEventListener('click', _controlClick);
@@ -248,7 +248,7 @@ var multiItemSlider = (function () {
           _refresh();
         }
       });
-    }
+    };
 
     // инициализация
     _setUpListeners();
@@ -273,16 +273,16 @@ var multiItemSlider = (function () {
         clearInterval(_interval);
         _cycle();
       }
-    }
+    };
 
-  }
+  };
 }());
 
 var slider = multiItemSlider('.slider', {
   isCycling: true
 
   
-})
+});
 
 document.querySelector('[data-modal]').addEventListener('click',() =>{
   const modal = document.querySelector('.modal__window');
