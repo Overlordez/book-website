@@ -83,7 +83,7 @@ var multiItemSlider = (function () {
       _config = {
         isCycling: false, // автоматическая смена слайдов
         direction: 'right', // направление смены слайдов
-        interval: 5000, // интервал между автоматической сменой слайдов
+        interval: 2000, // интервал между автоматической сменой слайдов
         pause: true // устанавливать ли паузу при поднесении курсора к слайдеру
       };
 
@@ -280,4 +280,7 @@ var multiItemSlider = (function () {
 
 var slider = multiItemSlider('.slider', {
   isCycling: true
+
+  
 })
+
