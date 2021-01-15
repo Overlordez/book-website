@@ -101,11 +101,10 @@ function open() {
   document.getElementById("menu").classList.toggle("show");
   document.getElementById("trigger").classList.toggle("active");
 }
-
-;
 /**
  * Youtube video
  */
+
 
 $('[data-youtube]').on('click', function () {
   var id = $(this).data('youtube'),
@@ -424,6 +423,32 @@ var multiItemSlider = function () {
 var slider = multiItemSlider('.slider', {
   isCycling: true
 });
+document.querySelector('[data-modal]').addEventListener('click', function () {
+  var modal = document.querySelector('.modal__window');
+
+  function showWindow() {
+    modal.classList.remove('hide');
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function hideWindow() {
+    modal.addEventListener('click', function (e) {
+      if (e.target && e.target.matches('[data-close]')) {
+        hideCode();
+      }
+    });
+  }
+
+  function hideCode() {
+    modal.classList.remove('show');
+    modal.classList.add('hide');
+    document.body.style.overflow = '';
+  }
+
+  showWindow();
+  hideWindow();
+});
 
 /***/ }),
 
@@ -456,9 +481,9 @@ var slider = multiItemSlider('.slider', {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/overlord/Desktop/mySite-master/src/app.js */"./src/app.js");
-__webpack_require__(/*! /Users/overlord/Desktop/mySite-master/src/app.scss */"./src/app.scss");
-module.exports = __webpack_require__(/*! /Users/overlord/Desktop/mySite-master/src/ru.scss */"./src/ru.scss");
+__webpack_require__(/*! C:\Js\Nekit\src\app.js */"./src/app.js");
+__webpack_require__(/*! C:\Js\Nekit\src\app.scss */"./src/app.scss");
+module.exports = __webpack_require__(/*! C:\Js\Nekit\src\ru.scss */"./src/ru.scss");
 
 
 /***/ })

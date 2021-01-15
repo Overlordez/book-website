@@ -581,6 +581,87 @@ footer a span {
   border: 3px solid #1b904e;
 }
 
+.modal__window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__window .test {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.modal__window {
+  -webkit-animation-duration: 0.55s;
+          animation-duration: 0.55s;
+  /* Время работы анимации */
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  /* Поведение анимации */
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  /* Имя анимации */
+}
+
+@-webkit-keyframes fadeInDown {
+  /* Сама анимация */
+  0% {
+    /* Старт анимации */
+    opacity: 0;
+    transform: translate3d(0px, -100%, 0px);
+  }
+
+  100% {
+    /* в финале анимации - финал это заданная 0.55s */
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  /* Сама анимация */
+  0% {
+    /* Старт анимации */
+    opacity: 0;
+    transform: translate3d(0px, -100%, 0px);
+  }
+
+  100% {
+    /* в финале анимации - финал это заданная 0.55s */
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 @-webkit-keyframes menu-bar07-01 {
   0% {
     -webkit-transform: translateY(20px) rotate(45deg);

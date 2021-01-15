@@ -5,7 +5,7 @@ document.getElementById("trigger").onclick = function() {
   function open() {
     document.getElementById("menu").classList.toggle("show");
     document.getElementById("trigger").classList.toggle("active");
-  };
+  }
 
 
 
@@ -284,3 +284,30 @@ var slider = multiItemSlider('.slider', {
   
 })
 
+document.querySelector('[data-modal]').addEventListener('click',() =>{
+  const modal = document.querySelector('.modal__window');
+
+  function showWindow() {
+    modal.classList.remove('hide');
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function hideWindow() {
+    modal.addEventListener('click',(e) => {
+      if(e.target && e.target.matches('[data-close]')) {
+        hideCode();
+      }
+    });
+  }
+
+  function hideCode() {
+    modal.classList.remove('show');
+    modal.classList.add('hide');
+    document.body.style.overflow = '';
+  }
+
+  showWindow();
+  hideWindow();
+
+});
